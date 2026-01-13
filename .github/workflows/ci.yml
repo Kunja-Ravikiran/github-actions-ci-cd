@@ -26,6 +26,6 @@ jobs:
             .
 
       - name: Verify Docker image exists
-        run: docker images | grep github-actions-ci-cd
+        run: docker image inspect github-actions-ci-cd:ci
 
 
